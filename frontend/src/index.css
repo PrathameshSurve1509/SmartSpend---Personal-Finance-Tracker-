@@ -1,0 +1,84 @@
+
+@import "tailwindcss";
+
+/* SmartSpend — warm, calm, natural palette */
+@theme {
+  /* Muted teal replaces bright emerald */
+  --color-emerald-50: #edf6f4;
+  --color-emerald-100: #d9ebe6;
+  --color-emerald-200: #b7d8d0;
+  --color-emerald-300: #8bbdb1;
+  --color-emerald-400: #5c9d90;
+  --color-emerald-500: #398575;
+  --color-emerald-600: #286e61;
+  --color-emerald-700: #22594f;
+  --color-emerald-800: #1d493f;
+  --color-emerald-900: #173a33;
+
+  /* Softer, warmer neutrals replace cool slate */
+  --color-slate-50: #faf9f6;
+  --color-slate-100: #f2f0ea;
+  --color-slate-200: #e6e3da;
+  --color-slate-300: #d2d0c6;
+  --color-slate-400: #a19f95;
+  --color-slate-500: #777970;
+  --color-slate-600: #5b6058;
+  --color-slate-700: #414941;
+  --color-slate-800: #29332f;
+  --color-slate-900: #202b28;
+
+  /* Softer supporting colors */
+  --color-blue-500: #7897a7;
+  --color-violet-500: #9b8caf;
+  --color-orange-400: #d3a16d;
+}
+
+:root {
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #29332f;
+  background: #faf9f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #faf9f6;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgb(40 110 97 / 22%);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #d9ebe6;
+  color: #202b28;
+}
